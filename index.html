@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Catch Word</title>
+</head>
+<body>
+    <div class="table">
+        <div class="start-game">
+            <div class="pop-up">
+                <p class="popup-title">Catch Word</p>
+                <button class="start" type="button">Start Game!</button>
+            </div>
+        </div>
+            <div class="board">
+                <div class="d-none">
+                    <div class="header">
+                        <div class="time hd-child">
+                            <p class="timer header-text">Time: <span class="timer-sc"></span></p>
+                        </div>
+                        <div class="correct-word hd-child">
+                            <p class="correctword header-text">Correct Word: <span class="cw-value"></span></p>
+                        </div>
+                        <div class="stage-div hd-child">
+                            <p class="stagep header-text">Stage: <span class="stage-value"></span> </p>
+                        </div>
+                    </div>
+                    <p class="incor-word">Incorrect!</p>
+                    <div class="generator">
+                        <div class="random-word-generator">
+                            <p class="randomGenP"></p>
+                        </div>
+                    </div>
+                    <div class="word-input">
+                        <input oncopy="return false" oncut="return false" onpaste="return false"  class="input" type="text" placeholder="Input word">
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
